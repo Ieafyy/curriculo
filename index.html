@@ -1,0 +1,114 @@
+<html  style="scroll-behavior:smooth;">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>New</title>
+    
+    <style>
+
+        .li1{
+            transition: .5s; 
+        }
+
+        .li1:hover{
+            color:#659651;
+            cursor: pointer;
+        }
+
+        .title-anim{
+            width:0px;
+            overflow:hidden;
+            animation: tipografia .5s .55s forwards steps(8, end), pisca .7s infinite;
+            padding-right: 4px;
+            border-right: 1px solid #659651;
+
+        }
+
+        @keyframes tipografia{
+            from { width : 0 }
+            to { width : 100% }
+        }
+
+        @keyframes pisca{
+            from { border-color: #659651; }
+            to { border-color: transparent; }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header style="background-color:#262721; position:fixed; z-index: 999; width:100%" class="flex py-4 px-4 justify-between">
+        <div>
+            <p style="color:#EAE6E5" class="font-bold li1">Raphael S. Ramalho</p>
+        </div>
+        <div>
+            <ul style="color:#EAE6E5" class="flex gap-4 font-bold">
+                <li class="li1"><a href="#inicio">Inicio</a></li>
+                <li class="li1"><a href="#sobre">Sobre</a></li>
+                <li class="li1">Projetos</li>
+                <li class="li1">Contato</li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="pl-40" style="background-color:#EAE6E5; height: 100vh; background-image: url(fundo1.png);" id="inicio">
+            <p class="text-3xl font-bold mb-2" style="padding-top: 40vh;" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">Bem vindo ao meu</p>
+            <div class="inline-block text-5xl font-bold" style="color: #659651" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true"><div class="title-anim">Currículo!</div></div>
+            <p class="mt-4 text-xl font-bold" data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000" data-aos-once="true">Hello World! :D</p>
+    </div>
+
+
+    <div style="background-color:#262721; color:#EAE6E5" id="sobre" class="lg:h-screen sm:h-fit sm:mb-20 lg:mb-0">
+            <p class="pt-20 text-5xl font-bold text-center" style="color:#EAE6E5">Sobre</p>
+            <p style="color:#EAE6E5" class="text-xl mt-5 mx-10">Olá, meu nome é Raphael Silva Ramalho e este é meu site curriculo!
+                Possuo 18 anos e sou técnico em eletrônica formado pelo CEFET-MG. Atualmente 
+                trabalho como estagiário no setor de manutenção, atuando diretamente na manufatura.
+                Visando novos horizontes, venho me aprimorando no ramo de programação. Como resultado de anos 
+                de estudo, posso afirmar que estou apto a ser um membro de um time de Dev!  
+            </p>
+            
+            <div class="grid lg:grid-cols-3 sm:grid-cols-1 lg:grid-rows-1 sm:grid-rows-3 mt-10 mx-10 gap-10 lg:gap-5">
+                <div  data-aos="flip-down" data-aos-once="True" data-aos-duration="1000">
+                    <p class="text-center text-2xl font-bold">Conhecimentos Técnicos</p>
+                    <ul class="mt-3 font-xl">
+                        <li>• Domínio das linguagens HTML, CSS e Python(destaque para as libs Flask e CherryPy)</li>
+                        <li>• Domínio dos sofwares AutoCad, Photoshop e pacote office;</li>
+                        <li>• Noções das linguagens C, C# e Javascript;</li>
+                        <li>• Conhecimento da maioria das ferramentas mecânicas e das boas práticas utilizadas na manutenção;</li>
+                        <li>• Circuitos Eletrícos</li>
+                        <li>• Banco de dados MySQL e SQL server</li>
+                        <li>• Inglês intermediário</li>
+                    </ul>
+                </div>
+                <div class="lg:border-x-2 lg:px-6" data-aos="flip-down" data-aos-once="True" data-aos-duration="1000" data-aos-delay="500">
+                    <p class="text-center text-2xl font-bold">Experiência Profissional</p>
+                    <p class="mt-3">Atualmente trabalho como estagiário no setor de manutenção na multinacional Jabil.
+                        Dentre minhas funções, podemos citar a manutenção preventiva e corretiva em ferramentas
+                        usadas nas linhas de montagem, controle e organização de estoque, gerenciamento de DBs e 
+                        desenvolvimento de peças 3D no Software AutoCad.
+                    </p>
+                </div>
+                <div data-aos="flip-down" data-aos-once="True" data-aos-duration="1000" data-aos-delay="1000">
+                    <p class="text-center text-2xl font-bold">Formação</p>
+                    <p class="mt-3"> Em 2021 completei o ensino médio integrado ao técnico em eletrônica no CEFET-MG,
+                        Atualmente, sou estudante do curso Sistemas para Internet ofertado pelo IFSC, estando agora
+                        no primeiro período. Fora a formação formal, tenho diversos cursos e horas de estudo autônomo em 
+                        programação e design gráfico.
+                    </p>
+                </div>
+            </div>
+    </div>
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
