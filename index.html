@@ -1,0 +1,425 @@
+<html  style="scroll-behavior:smooth;">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/908910519c.js" crossorigin="anonymous"></script>
+    <title>New</title>
+    
+    <style>
+
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .li1{
+            transition: .5s; 
+        }
+
+        .li1:hover{
+            color:#659651;
+            cursor: pointer;
+        }
+
+        .title-anim{
+            width:0px;
+            overflow:hidden;
+            animation: tipografia .5s .55s forwards steps(8, end), pisca .7s infinite;
+            padding-right: 4px;
+            border-right: 1px solid #659651;
+
+        }
+
+        @keyframes tipografia{
+            from { width : 0 }
+            to { width : 100% }
+        }
+
+        @keyframes pisca{
+            from { border-color: #659651; }
+            to { border-color: transparent; }
+        }
+
+
+        .icone:hover{
+
+            color:#45583d;
+            cursor: pointer;
+        
+        }
+
+        #btn_ol{
+
+            color:#659651;
+            transition: .2s;
+
+        }
+
+        #btn_ol:hover{
+
+            color:#EAE6E5;
+            background-color:#659651;
+
+        }
+
+
+    </style>
+
+</head>
+<body style="zoom: 100%">
+    <header style="background-color:#262721; position:fixed; z-index: 999; width:100%" class="flex py-4 px-4 justify-between">
+        <div>
+            <p style="color:#EAE6E5" class="font-bold li1">Raphael S. Ramalho</p>
+        </div>
+        <div>
+            <ul style="color:#EAE6E5" class="flex gap-4 font-bold">
+                <li class="li1"><a href="#inicio">Inicio</a></li>
+                <li class="li1"><a href="#sobre">Sobre</a></li>
+                <li class="li1 md:hidden block"><a href="#projetos_pequeno">Projetos</a></li>
+                <li class="li1 md:block hidden"><a href="#projetos_grande">Projetos</a></li>
+                <li class="li1"><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="pl-40" style="background-color:#EAE6E5; height: 100vh; background-image: url(fundo1.png);" id="inicio">
+            <p class="text-3xl mb-2" style="padding-top: 40vh;" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">Bem vindo ao meu</p>
+            <div class="inline-block text-5xl" style="color: #659651" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true"><div class="title-anim">Currículo!</div></div>
+            <p class="mt-4 text-xl" data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000" data-aos-once="true">Hello World! :D</p>
+            <div class="inline-flex mt-7 text-3xl" style="color: #659651">
+                <i class="fa-brands fa-whatsapp mr-7 icone" onclick="window.open('https://api.whatsapp.com/send?phone=5531971709990')" data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000" data-aos-once="true"></i>
+                <i class="fa-solid fa-envelope mr-7 icone" onclick="navigator.clipboard.writeText('raphaelsilvaramalho.com@gmail.com'); alert('Copiado para o clipboard!')" data-aos="fade-up" data-aos-delay="700" data-aos-duration="2000" data-aos-once="true"></i>
+                <i class="fa-brands fa-github mr-7 icone" onclick="window.open('https://github.com/Ieafyy')" data-aos="fade-up" data-aos-delay="800" data-aos-duration="2000" data-aos-once="true"></i>
+                <i class="fa-solid fa-file mr-7 icone" onclick="window.open('curriculo.pdf')" data-aos="fade-up" data-aos-delay="900" data-aos-duration="2000" data-aos-once="true"></i>
+            </div>
+    </div>
+
+
+    <div style="background-color:#262721; color:#EAE6E5" id="sobre" class="lg:h-screen md:h-fit md:mb-20 lg:mb-0">
+            <p class="pt-20 text-5xl font-bold text-center" style="color:#EAE6E5">Sobre</p>
+            <p style="color:#EAE6E5" class="text-xl mt-5 mx-10">Olá, meu nome é Raphael Silva Ramalho e este é meu site curriculo!
+                Possuo 18 anos e sou técnico em eletrônica formado pelo CEFET-MG. Atualmente 
+                trabalho como estagiário no setor de manutenção, atuando diretamente na manufatura.
+                Visando novos horizontes, venho me aprimorando no ramo de programação. Como resultado de anos 
+                de estudo, posso afirmar que estou apto a ser um membro de um time de Dev!  
+            </p>
+            
+            <div class="grid lg:grid-cols-3 md:grid-cols-1 lg:grid-rows-1 md:grid-rows-3 pb-10 mt-10 mx-10 gap-10 lg:gap-5">
+                <div  data-aos="flip-down" data-aos-once="True" data-aos-duration="1000">
+                    <p class="text-center text-2xl font-bold">Conhecimentos Técnicos</p>
+                    <ul class="mt-3 font-xl">
+                        <li>• Domínio das linguagens HTML, CSS e Python(destaque para as libs Flask e CherryPy)</li>
+                        <li>• Domínio dos sofwares AutoCad, Photoshop e pacote office;</li>
+                        <li>• Noções das linguagens C, C# e Javascript;</li>
+                        <li>• Conhecimento da maioria das ferramentas mecânicas e das boas práticas utilizadas na manutenção;</li>
+                        <li>• Circuitos Eletrícos</li>
+                        <li>• Banco de dados MySQL e SQL server</li>
+                        <li>• Inglês intermediário</li>
+                    </ul>
+                </div>
+                <div class="lg:border-x-2 lg:px-6 lg:border-y-0 border-y-2 lg:py-0 py-10" data-aos="flip-down" data-aos-once="True" data-aos-duration="1000" data-aos-delay="500">
+                    <p class="text-center text-2xl font-bold">Experiência Profissional</p>
+                    <p class="mt-3">Atualmente trabalho como estagiário no setor de manutenção na multinacional Jabil.
+                        Dentre minhas funções, podemos citar a manutenção preventiva e corretiva em ferramentas
+                        usadas nas linhas de montagem, controle e organização de estoque, gerenciamento de DBs e 
+                        desenvolvimento de peças 3D no Software AutoCad.
+                    </p>
+                </div>
+                <div data-aos="flip-down" data-aos-once="True" data-aos-duration="1000" data-aos-delay="1000">
+                    <p class="text-center text-2xl font-bold">Formação</p>
+                    <p class="mt-3"> Em 2021 completei o ensino médio integrado ao técnico em eletrônica no CEFET-MG,
+                        Atualmente, sou estudante do curso Sistemas para Internet ofertado pelo IFSC, estando agora
+                        no primeiro período. Fora a formação formal, tenho diversos cursos e horas de estudo autônomo em 
+                        programação e design gráfico.
+                    </p>
+                </div>
+            </div>
+    </div>
+
+
+
+    <div style="background-color:#EAE6E5; color:#262721" id="projetos_pequeno" class="h-fit pb-10 lg:pb-0 block lg:hidden">
+
+        <p class="pt-20 text-5xl font-bold text-center" style="color:#262721">Projetos</p>
+        <p style="color:#262721" class="text-xl mt-5 mx-10"> Ao longo de todos os meus anos de estudo,
+            fiz uma série de projetos para por em prática meus conhecimentos, de uma olhada em alguns deles ou confira todos em meu <a href="https://github.com/Ieafyy" class="underline">Github</a>
+        </p>
+
+        <div class="mt-10 grid grid-cols-1 grid-rows-4">
+
+            <div>
+
+                <div class="flex justify-center"><img src="foto2.png" alt="" srcset="" class="rounded-full text-center" style="aspect-ratio: 1/1; object-fit: none; width:300px;"></div>
+                <div class="text-center mt-7">
+                    <p class="text-center font-bold text-2xl">Sistema de Controle para placas de perfil</p>
+                    <p class="mt-5 px-5">Sistema desenvolvido por mim para realizar e controlar as movimentações de placas no setor onde trabalho</p>
+                    <p class="mt-5 px-5">Backend escrito em Python(CherryPy), front escrito em HTML e CSS (Tailwind) e banco de dados SQL Server;</p>
+                    <a href="https://github.com/Ieafyy/Sistema-de-controle-para-inventario" class="px-5"><button class="mt-10 px-5 rounded-xl" style="border-width:3px; border-color: #659651;" id="btn_ol">De uma olhada!</button></a>
+                </div>
+            
+            </div>
+            
+            <div>
+
+                <div class="flex justify-center"><img src="setsuna.jpg" alt="" srcset="" class="rounded-full mt-10 text-center" style="aspect-ratio: 1/1; object-fit: none; width:300px;"></div>
+                <div class="text-center mt-7">
+                    <p class="text-center font-bold text-2xl">Bot Discord - Project Setsuna</p>
+                    <p class="mt-5 px-5">Bot para a plataforma de chat Discord. Dentre suas inúmeras funções, podemos citar respostas prontas customizáveis, baixar músicas, cálculo de funções...</p>
+                    <p class="mt-5 px-5">Escrito 100% em Python usando a API oficial disponibilizada pelo Discord</p>
+                    <a href="https://github.com/Ieafyy/Project_Setsuna" class="px-5"><button class="mt-10 px-5 rounded-xl" style="border-width:3px; border-color: #659651;" id="btn_ol">De uma olhada!</button></a>
+                </div>
+
+            </div>
+
+            <div>
+                
+                <div class="flex justify-center"><img src="foto3.png" alt="" srcset="" class="rounded-full mt-10 text-center" style="aspect-ratio: 1/1; object-fit: none; width:300px;"></div>
+                <div class="text-center mt-7">
+                    <p class="text-center font-bold text-2xl">Jogo Pong para console do Windows</p>
+                    <p class="mt-5 px-5">Clássico Pong feito para ser jogado no console do windows, aceita 1 ou 2 jogadores!</p>
+                    <p class="mt-5 px-5">Feito totalmente em C sem nenhuma lib externa</p>
+                    <a href="https://github.com/Ieafyy/Console_Pong" class="px-5"><button class="mt-10 px-5 rounded-xl" style="border-width:3px; border-color: #659651" id="btn_ol">De uma olhada!</button></a>
+                </div> 
+
+            </div>
+
+            <div>
+
+                <div class="flex justify-center"><img src="foto4.png" alt="" srcset="" class="rounded-full mt-10 text-center" style="aspect-ratio: 1/1; object-fit: none; width:300px;"></div>
+                <div class="text-center mt-7">
+                    <p class="text-center font-bold text-2xl">Este site!</p>
+                        <p class="mt-5 px-5">Isso mesmo! Esse site foi feito por mim</p>
+                        <p class="mt-5 px-5">Escrito em HTML, CSS (Tailwind), JS e postado usando Github Pages</p>
+                        <a href="https://github.com/Ieafyy/curriculo" class="px-5"><button class="mt-10 px-5 rounded-xl" style="border-width:3px; border-color: #659651;" id="btn_ol">De uma olhada!</button></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div style="background-color:#EAE6E5; color:#262721" id="projetos_grande" class="h-fit lg:h-screen pb-10 lg:pb-0 hidden lg:block">
+
+        <p class="pt-20 text-5xl font-bold text-center" style="color:#262721">Projetos</p>
+        <p style="color:#262721" class="text-xl mt-5 mx-10"> Ao longo de todos os meus anos de estudo,
+            fiz uma série de projetos para por em prática meus conhecimentos, de uma olhada em alguns deles ou confira todos em meu <a href="https://github.com/Ieafyy" class="underline">Github</a>
+        </p>
+
+        <div class="mt-10" style="max-height: 300px; min-height: 300px">
+            <div class="grid grid-cols-2 mx-4" id="pagina1">
+                <div><img src="foto2.png" style="width:50vw" alt=""></div>
+                <div>
+                    <p class="text-center font-bold text-2xl">Sistema de Controle para placas de perfil</p>
+                    <p class="mt-5 px-5">Sistema desenvolvido por mim para realizar e controlar as movimentações de placas no setor onde trabalho</p>
+                    <p class="mt-5 px-5">Backend escrito em Python(CherryPy), front escrito em HTML e CSS (Tailwind) e banco de dados SQL Server;</p>
+                    <a href="https://github.com/Ieafyy/Sistema-de-controle-para-inventario" class="px-5"><button class="mt-10 px-5 rounded-xl" style="border-width:3px; border-color: #659651;" id="btn_ol">De uma olhada!</button></a>
+                </div>
+            </div>
+
+            <div style="display:none" id="pagina2">
+                <div class="grid grid-cols-2 mx-4">
+                    <div class="flex justify-center"><img src="setsuna.jpg" style="width:25vw" alt=""></div>
+                    <div>
+                        <p class="text-center font-bold text-2xl">Bot Discord - Project Setsuna</p>
+                        <p class="mt-5 px-5">Bot para a plataforma de chat Discord. Dentre suas inúmeras funções, podemos citar respostas prontas customizáveis, baixar músicas, cálculo de funções...</p>
+                        <p class="mt-5 px-5">Escrito 100% em Python usando a API oficial disponibilizada pelo Discord</p>
+                        <a href="https://github.com/Ieafyy/Project_Setsuna" class="px-5"><button class="mt-10 px-5 rounded-xl" style="border-width:3px; border-color: #659651;" id="btn_ol">De uma olhada!</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display:none" id="pagina3">
+                <div class="grid grid-cols-2 mx-4">
+                    <div class="flex justify-center"><img src="foto3.png" style="width:40vw" alt=""></div>
+                    <div>
+                        <p class="text-center font-bold text-2xl">Jogo Pong para console do Windows</p>
+                        <p class="mt-5 px-5">Clássico Pong feito para ser jogado no console do windows, aceita 1 ou 2 jogadores!</p>
+                        <p class="mt-5 px-5">Feito totalmente em C sem nenhuma lib externa</p>
+                        <a href="https://github.com/Ieafyy/Console_Pong" class="px-5"><button class="mt-10 px-5 rounded-xl" style="border-width:3px; border-color: #659651" id="btn_ol">De uma olhada!</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display:none" id="pagina4">
+                <div class="grid grid-cols-2 mx-4">
+                    <div class="flex justify-center"><img src="foto4.png" style="width:45vw" alt=""></div>
+                    <div>
+                        <p class="text-center font-bold text-2xl">Este site!</p>
+                        <p class="mt-5 px-5">Isso mesmo! Esse site foi feito por mim</p>
+                        <p class="mt-5 px-5">Escrito em HTML, CSS (Tailwind), JS e postado usando Github Pages</p>
+                        <a href="https://github.com/Ieafyy/curriculo" class="px-5"><button class="mt-10 px-5 rounded-xl" style="border-width:3px; border-color: #659651;" id="btn_ol">De uma olhada!</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center text-8xl gap-5" style="user-select:none">
+            <p onclick="mostrar(1)" style="color:#659651; cursor:pointer;" id="btn1">•</p>
+            <p onclick="mostrar(2)" id="btn2" style="cursor:pointer;">•</p>
+            <p onclick="mostrar(3)" id="btn3" style="cursor:pointer;">•</p>
+            <p onclick="mostrar(4)" id="btn4" style="cursor:pointer;">•</p>
+        </div>
+    </div>
+
+
+
+    <div class="lg:h-screen md:h-fit pb-10 lg:pb-0" id="contato" style="background-color:#262721; color:#EAE6E5">
+        <p class="pt-20 text-5xl font-bold text-center">Contato</p>
+        <p class="text-xl mt-5 mx-10 text-center">Quer entrar em contato? Pode me encontrar nos seguintes locais</p>
+        <div class="flex lg:flex-row flex-col justify-center align-center gap-36 text-9xl mt-24 text-center">
+            <div onclick="window.open('https://api.whatsapp.com/send?phone=5531971709990')"> 
+                <i class="fa-brands fa-whatsapp" style="transition: .3s;" onmouseover="trans('wpp')" onmouseout="trans_out('wpp')" id="wpp"></i>
+                <p class="text-2xl text-center" style="opacity:0%; transition: 0.3s;" id="nome_wpp">Whatsapp</p>
+            </div>
+            <div onclick="navigator.clipboard.writeText('raphaelsilvaramalho.com@gmail.com'); alert('copiado para o clipboard!')">
+                <i class="fa-solid fa-envelope" style="transition: .3s;" onmouseover="trans('mail')" onmouseout="trans_out('mail')" id="mail"></i>
+                <p class="text-2xl text-center" style="opacity:0%; transition: 0.3s;" id="nome_mail">Email</p>
+            </div>
+            <div onclick="window.open('https://www.linkedin.com/in/raphael-ramalho-549224216/')">    
+                <i class="fa-brands fa-linkedin" style="transition: .3s;" onmouseover="trans('ldin')" onmouseout="trans_out('ldin')" id="ldin"></i>
+                <p class="text-2xl text-center" style="opacity:0%; transition: 0.3s;" id="nome_ldin">Linkedin</p>
+            </div>
+        </div>
+
+        <p class="text-center font-bold mt-14 text-3xl">Detalhe!</p>
+        <p class="text-xl mt-5 px-24 text-center">Devido a minha rotina, não tenho disponibilidade para atender telefonemas nos períodos da manhã e tarde, por isso
+            me contate preferencialmente por mensagem ou email.
+        </p>
+
+    </div>
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+
+        function trans(nome){
+
+            let wpp = document.getElementById("wpp")
+            let ldin = document.getElementById("ldin")
+            let mail = document.getElementById("mail")
+
+            let nome_wpp = document.getElementById("nome_wpp")
+            let nome_ldin = document.getElementById("nome_ldin")
+            let nome_mail = document.getElementById("nome_mail")
+
+            if(nome == "wpp"){
+                nome_wpp.style.opacity = "100%"
+                wpp.style.transform = "translateY(-10px)"
+            }
+
+            if(nome == "ldin"){
+                nome_ldin.style.opacity = "100%"
+                ldin.style.transform = "translateY(-10px)"
+            }
+
+            if(nome == "mail"){
+                nome_mail.style.opacity = "100%"
+                mail.style.transform = "translateY(-10px)"
+            }
+        }
+
+        function trans_out(nome){
+
+            let wpp = document.getElementById("wpp")
+            let ldin = document.getElementById("ldin")
+            let mail = document.getElementById("mail")
+
+            let nome_wpp = document.getElementById("nome_wpp")
+            let nome_ldin = document.getElementById("nome_ldin")
+            let nome_mail = document.getElementById("nome_mail")
+
+            if(nome == "wpp"){
+                nome_wpp.style.opacity = "0%"
+                wpp.style.transform = "translateY(10px)"
+            }
+
+            if(nome == "ldin"){
+                nome_ldin.style.opacity = "0%" 
+                ldin.style.transform = "translateY(10px)"
+            }
+
+            if(nome == "mail"){
+                nome_mail.style.opacity = "0%"
+                mail.style.transform = "translateY(10px)"
+            }
+    }
+
+        function mostrar(numero){
+
+            let pagina1 = document.getElementById("pagina1")
+            let pagina2 = document.getElementById("pagina2")
+            let pagina3 = document.getElementById("pagina3")
+            let pagina4 = document.getElementById("pagina4")
+
+            let btn1 = document.getElementById("btn1")
+            let btn2 = document.getElementById("btn2")
+            let btn3 = document.getElementById("btn3")
+            let btn4 = document.getElementById("btn4")
+
+            if(numero == 1){
+                btn1.style.color = "#659651"
+                btn2.style.color = "#262721"
+                btn3.style.color = "#262721"
+                btn4.style.color = "#262721"
+
+                pagina1.style.display = "grid"
+                pagina2.style.display = "none"
+                pagina3.style.display = "none"
+                pagina4.style.display = "none"
+            }
+
+            if(numero == 2){
+                btn1.style.color = "#262721"
+                btn2.style.color = "#659651"
+                btn3.style.color = "#262721"
+                btn4.style.color = "#262721"
+
+                pagina1.style.display = "none"
+                pagina2.style.display = "grid"
+                pagina3.style.display = "none"
+                pagina4.style.display = "none"
+            }
+
+            if(numero == 3){
+                btn1.style.color = "#262721"
+                btn3.style.color = "#659651"
+                btn2.style.color = "#262721"
+                btn4.style.color = "#262721"
+
+                pagina1.style.display = "none"
+                pagina2.style.display = "none"
+                pagina3.style.display = "grid"
+                pagina4.style.display = "none"
+            }
+
+            if(numero == 4){
+                btn1.style.color = "#262721"
+                btn4.style.color = "#659651"
+                btn3.style.color = "#262721"
+                btn2.style.color = "#262721"
+
+                pagina1.style.display = "none"
+                pagina2.style.display = "none"
+                pagina3.style.display = "none"
+                pagina4.style.display = "grid"
+            }
+
+
+        }
+
+    </script>
+
+</body>
+</html>
